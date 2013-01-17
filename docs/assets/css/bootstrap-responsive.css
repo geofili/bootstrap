@@ -53,6 +53,10 @@
   display: none !important;
 }
 
+.visible-phone-landscape {
+  display: none !important;
+}
+
 .visible-tablet {
   display: none !important;
 }
@@ -63,6 +67,26 @@
 
 .visible-desktop {
   display: inherit !important;
+}
+
+/* Landscape iPhone */
+@media screen and (max-height:320px) {
+    .visible-phone-landscape {
+        display: inherit !important;
+    }
+    .hidden-phone-landscape {
+        display: none !important;
+    }
+}
+
+/* Portrait iPhone */
+@media screen and (max-width:320px) {
+    .visible-phone-portrait {
+        display: inherit !important;
+    }
+    .hidden-phone-portrait {
+        display: none !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
